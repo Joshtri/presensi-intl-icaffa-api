@@ -1,0 +1,23 @@
+{
+  "name": "presensi-intl-icaffa-api",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "eslint": "^9.9.0",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.4"
+  }
+}
