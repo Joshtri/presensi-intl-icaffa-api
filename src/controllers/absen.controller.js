@@ -45,13 +45,13 @@ export const absenPesertaRegistered = async (req, res) => {
 
 export const absenPesertaUnregistered = async (req, res) => {
     try {
-        const { fullname, institute, email_address, registering_as} = req.body;
+        const { fullname, institute, email_address} = req.body;
 
         const newAbsenUnregistered = await UnregisteredPresensi.create({
             fullname,
             institute,
             email_address,
-            registering_as
+            // registering_as
         });
 
         res.status(201).json(newAbsenUnregistered);
