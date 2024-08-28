@@ -15,6 +15,11 @@ const unregisteredPresensiSchema = new mongoose.Schema({
         required: true
     },
 
+    registering_as:{
+        type: String,
+        required: true
+    }
+
 });
 
 const UnregisteredPresensi = mongoose.model("UnregisteredPresensi", unregisteredPresensiSchema);
