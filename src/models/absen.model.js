@@ -17,7 +17,7 @@ const absenSchema = new mongoose.Schema({
     },
 
 
-});
+}, { timestamps: true });
 
 
 const Absen = mongoose.model("Absen", absenSchema);
